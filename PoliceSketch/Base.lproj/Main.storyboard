@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LPSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eyes_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NY4-Kv-j1f">
+                                <rect key="frame" x="49" y="56" width="216" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXb-1x-fkn">
+                                <rect key="frame" x="5" y="56" width="56" height="100"/>
+                                <state key="normal" image="arrow_left.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousEye:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rv0-rH-N8c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-ja-FCK">
+                                <rect key="frame" x="257" y="56" width="61" height="100"/>
+                                <state key="normal" image="arrow_right.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextEye:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uZp-FX-atR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nose_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jMz-uh-rfx">
+                                <rect key="frame" x="48" y="184" width="216" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-Tx-I7o">
+                                <rect key="frame" x="4" y="184" width="56" height="100"/>
+                                <state key="normal" image="arrow_left.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousNose:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iNS-uC-ifB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2F-TP-tRG">
+                                <rect key="frame" x="256" y="184" width="61" height="100"/>
+                                <state key="normal" image="arrow_right.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextNose:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8kI-BP-diD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDn-5u-KXo">
+                                <rect key="frame" x="0.0" y="325" width="56" height="100"/>
+                                <state key="normal" image="arrow_left.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousMouth:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="32d-UY-nnN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMn-7N-dM0">
+                                <rect key="frame" x="259" y="325" width="61" height="100"/>
+                                <state key="normal" image="arrow_right.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextMouth:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fft-jk-aGw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mouth_3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tog-m6-fes">
+                                <rect key="frame" x="49" y="308" width="216" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="eyesImage" destination="NY4-Kv-j1f" id="dkC-GI-ed0"/>
+                        <outlet property="mouthImage" destination="Tog-m6-fes" id="yqp-Pb-6WX"/>
+                        <outlet property="noseImage" destination="jMz-uh-rfx" id="hJd-9u-qmp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_left.jpg" width="50" height="100"/>
+        <image name="arrow_right.jpg" width="50" height="100"/>
+        <image name="eyes_1.jpg" width="220" height="100"/>
+        <image name="mouth_3.jpg" width="220" height="100"/>
+        <image name="nose_2.jpg" width="220" height="100"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
